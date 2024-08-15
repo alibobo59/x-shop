@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="<?php echo '/FPoly/DuAnMau/X-Shop/admin/assets/adminViewStyle.css' ?>">
     <title>Document</title>
 </head>
 
@@ -25,3 +25,16 @@
                 </ul>
             </nav>
         </header>
+        <main class="main-container admin">
+            <div class="form-header header admin">
+                <h1>Đây là trang Admin</h1>
+            </div>
+
+        </main>
+        <footer class="footer-container">
+            <p>Tam Minh Đẹp Trai </p>
+        </footer>
+    </div>
+</body>
+
+</html>

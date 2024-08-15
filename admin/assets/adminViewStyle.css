@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --nav:#262626;
+    --nav-text:#7d7b80;
+    --header-text:#4a7d57;
+    --header-background:#e2f3db;
+    --header-background-admin:#f4e2e4;
+    --header-text-admin:#aa575a;
+    --box-header:#f6f6f6;
+    --footer-background:#57ae91;
+    --footer-border:#1e7b39;
+    --footer-text:blue;
+
+
+}
+
+.app-container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.header{
+    height: 80px;
+    background-color: var(--header-background);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.header h5{
+    font-size: 30px;
+    color: var(--header-text);
+}
+ .header.admin{
+    background-color: var(--header-background-admin);
+ }
+ .header.admin h5{
+    color: var(--header-text-admin);
+ }
+
+.nav-container ul{
+    display: flex;
+    margin-left: 0px;
+    height: 100%;
+    background-color: var(--nav);
+    /* background-color: red; */
+}
+
+
+
+.nav-container ul li{
+    padding-left: 10px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    
+}
+.nav-container ul li a{
+    color: var(--nav-text);
+}
+
+.nav-container{
+    margin-top: 10px;
+    background-color: gray;
+    height: 50px;
+}
+
+/* main css */
+
+.main-container{
+    display: flex;
+    margin-top: 10px;
+    column-gap: 10px;
+}
+.section-content{
+    flex: 3;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.aside-right{
+    flex: 1;
+    /* background-color: red; */
+}
+
+.slider{
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}
+
+.product-container{
+    margin-top: 10px;
+    width: 100%;
+    height: 900px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-content: flex-start;
+
+
+}
+
+.product-card{
+    flex-basis: 30%;
+    min-height: 200px;
+    max-height: 400px;
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.product-img{
+    max-width: 250px;
+    min-width: 200px;
+    width: 70%;
+   margin-bottom: 20px;
+}
+
+/* aside */
+
+.aside-right{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box-signIn{
+    
+    
+    border: solid 1px gray;
+    border-radius:5px;
+ 
+    
+}
+
+.form-signIn{
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.box-title{
+    background-color: var(--box-header);
+
+}
+.box-title{
+    border-bottom:solid 1px gray;
+    padding: 10px;
+   
+}
+
+.signIn-field{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.signIn-field input{
+    height: 20px;
+}
+
+.rememberMe{
+    padding:5px;
+    border: solid 1px black;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.submit-btn{
+    width:80px;
+    height:30px;
+}
+
+.options li{
+    list-style-type: disc;
+}
+
+.box-productList{
+    border: 1px solid black;
+    border-radius:5px;
+}
+
+.productList-items{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    
+}
+.productList-items a{
+    color: black;
+}
+
+.box-search{
+    border-radius:5px;
+    display: flex;
+}
+.productList-search{
+    flex: 1;
+    height: 25px;
+    padding: 4px;
+}
+
+.box-favList{
+    border-radius:5px;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+
+.box-favList-items{
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+
+.box-favList-items img{
+    width: 30px;
+}
+
+
+/* footer */
+
+.footer-container{
+    border-radius:5px;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--footer-background);
+    margin-top: 10px;
+    border: 2px solid var(--footer-border);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.footer-container p{
+    color: var(--footer-text);
+}
+
+
+/* ADMIN */
+.form-header.header.admin h1{
+  color:var(--header-text);
+font-size: 20px;
+   
+}
+.main-container.admin{
+    flex-direction: column;
+}
+
+.form-add-productType{
+    width: 100%;
+}
+.form-header.header.admin{
+    background-color: var(--header-background);
+    margin-bottom:10px;    }
+
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-control>label{
+font-weight: bold;
+}
+
+
+
+.form-control input{
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.form-control.btns{
+    flex-direction: row;
+    gap: 5px;
+}
+.form-control.btns input[type="button"]{
+    height: 30px;
+    min-width: 90px;
+    border-radius: 0px;
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+}
+.form-control.btns input[type="reset"]{
+    height: 30px;
+    min-width: 90px;
+    border-radius: 0px;
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+}
+.form-control.btns input[type="submit"]{
+    height: 30px;
+    min-width: 90px;
+    border-radius: 0px;
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+/* product type */
+.table-productType{
+    width: 100%;
+ 
+    border-collapse: collapse;
+}
+.table-productType th,td{
+
+border-collapse: collapse;
+text-align:center;
+height: 40px;
+white-space: nowrap;
+}
+.table-productType td{
+    border: none;
+    border-bottom: 1px solid var(--box-header);
+}
+
+.table-productType th{
+    background-color: var(--box-header);
+}
+
+
+.actions{
+    text-align:left;
+    padding-left: 10px;
+}
+
+.actions button{
+    min-width: 50px;
+    border-radius: 0px;
+    height: 30px;
+    background-color: white;
+    color: var(--nav-text);
+    border: 1px solid var(--nav-text);
+}
+
+.form-actions{
+    margin-top: 10px;
+}
+.form-actions button{
+    min-width: 100px;
+    height: 30px;
+    padding: 8px;
+    border: none;
+    color:var(--nav-text);
+}
+.form-actions input{
+    min-width: 100px;
+    height: 30px;
+    padding: 8px;
+    border: none;
+    color:var(--nav-text);
+}
+

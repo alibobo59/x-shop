@@ -1,8 +1,8 @@
 <main class="main-container admin">
     <div class="form-header header admin">
-        <h1>THÊM MỚI LOẠI HÀNG</h1>
+        <h1>Đây là trang Admin</h1>
     </div>
-    <form action="" class="form-add-productType admin">
+    <!-- <form action="" class="form-add-productType admin">
         <div class="form-control">
             <label for="productType-id">Mã Loại</label>
             <input disabled placeholder="auto number" type="text" name="productType-id" />
@@ -16,5 +16,5 @@
             <input type="button" value="Nhập lại" />
             <input type="button" value="Danh sách" />
         </div>
-    </form>
+    </form> -->
 </main>
